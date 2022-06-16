@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="by_continuing_you_may_receive_an_sms_for_verification_message_and_data_rate_may_apply">By Continuing you may receive an SMS for verification.Message and data rate may apply.</string>
+    <string name="txt_what_s_your_name">What\'s your name?</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_what_s_your_email">What\'s your email?</string>
+    <string name="txt_this_is_where_we_ll_send_your_ride_receipts">This is where we\'ll send your ride receipts.</string>
+    <string name="txt_next">NEXT</string>
+    <string name="txt_drivers_will_confirm_it_s_you_when_they_pull_up">Drivers will confirm it\'s you when they pull up</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_register_with_mobile_number">Register with mobile number</string>
+    <string name="txt_verify_number">VERIFY NUMBER</string>
+    <string name="txt_or_connect_using_social_media">Or connect using social media</string>
+    <string name="txt_register_with_google">Register with Google</string>
+    <string name="txt_we_will_redirect_you_to_our_third_party_partner_pages_for_social_media_login">We will redirect you to our third party partner pages for social media login</string>
+    <string name="txt_already_have_an_account">Already have an account?</string>
+    <string name="txt_login">Login</string>
+</resources>

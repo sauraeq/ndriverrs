@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_offline"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.app.whirl.utils.circularimage.BorderedCircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_circle"
+                    app:bciv_border_color="@color/redbtn"
+                    app:bciv_border_size="1dp"
+                    app:bciv_src="@drawable/profile"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/imgProfile"
+                    android:text=""
+                    android:textColor="@color/defaultTextColor"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvName"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_toRightOf="@+id/imgProfile"
+                    android:text="Basic Level"
+                    android:textColor="@color/defaultTextColor"
+                    android:textSize="@dimen/sp_15" />
+
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="$00.00"
+                    android:textColor="@color/redbtn"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/tvEarned"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/defaultTextColor"
+                    android:textSize="@dimen/sp_15"
+                    android:layout_below="@+id/tvPrice"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="Earned" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/light_gray"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_baseline_access_time_24"
+                            android:padding="20dp"
+                            android:layout_height="0dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Hours Online"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:id="@+id/tvHr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_baseline_speed_24"
+                            android:padding="20dp"
+                            android:layout_height="0dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Total Distance"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:id="@+id/tvDistance"
+                            android:layout_width="match_parent"
+                            android:text="0 Km"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_baseline_shopping_bag_24"
+                            android:padding="20dp"
+                            android:layout_height="0dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Total Jobs"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:id="@+id/tvJobs"
+                            android:layout_width="match_parent"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+  <LinearLayout
+      android:id="@+id/card_online"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone"
+      android:translationZ="90dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="@dimen/dp_10"
+      android:layout_marginEnd="@dimen/dp_10"
+      android:layout_marginBottom="@dimen/dp_20">
+
+      <androidx.cardview.widget.CardView
+
+          android:layout_width="match_parent"
+          android:layout_height="350dp"
+
+
+          app:cardCornerRadius="@dimen/dp_30">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_10">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/ivCustomerImage"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"
+                      android:src="@drawable/profile_icon"
+
+                      />
+
+                  <TextView
+                      android:id="@+id/tvCustName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/dp_8"
+                      android:layout_marginTop="@dimen/dp_10"
+                      android:layout_toRightOf="@+id/ivCustomerImage"
+                      android:text="Name"
+
+                      android:textColor="@color/defaultTextColor"
+                      android:textSize="@dimen/sp_15" />
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvName1"
+                      android:layout_marginStart="@dimen/dp_8"
+                      android:layout_marginTop="@dimen/dp_2"
+                      android:layout_toRightOf="@+id/imgProfile1"
+                      android:text="Apply Pay"
+                      android:orientation="horizontal"
+                      android:textColor="@color/defaultTextColor"
+                      android:textSize="@dimen/sp_15"
+                      android:visibility="gone">
+
+                      <LinearLayout
+                          android:layout_width="70dp"
+                          android:background="@drawable/bg_rounded_upload_red"
+                          android:layout_height="20dp">
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_below="@+id/tvName1"
+                              android:textSize="10sp"
+                              android:gravity="center"
+                              android:text="Apply Pay"
+                              android:textColor="@color/white"
+                              />
+
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="70dp"
+                          android:layout_marginLeft="10dp"
+                          android:background="@drawable/bg_rounded_upload_red"
+                          android:layout_height="20dp">
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_below="@+id/tvName1"
+                              android:textSize="10sp"
+                              android:gravity="center"
+                              android:text="Discount"
+                              android:textColor="@color/white"
+                              />
+
+                      </LinearLayout>
+
+                  </LinearLayout>
+
+
+                  <TextView
+                      android:id="@+id/tvBookingPrice"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="@dimen/dp_8"
+                      android:layout_marginTop="@dimen/dp_10"
+                      android:text="$25.00"
+                      android:textColor="@color/redbtn"
+                      android:textSize="@dimen/sp_15" />
+
+                  <TextView
+                      android:id="@+id/tvBookingDistance"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvBookingPrice"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginStart="@dimen/dp_8"
+                      android:layout_marginTop="@dimen/dp_2"
+                      android:text="4.5 Kms"
+                      android:textColor="@color/defaultTextColor"
+                      android:textSize="@dimen/sp_15"
+                      />
+              </RelativeLayout>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:text="Pick up"
+                      android:padding="10dp"
+                      android:textColor="@color/textGrey"
+                      android:layout_height="wrap_content">
+
+                  </TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:padding="10dp"
+                      android:background="@drawable/bg_rounded_upload_grey"
+                      android:textColor="@color/textGrey"
+                      android:layout_height="40dp"
+                      android:id="@+id/tvPickAddress"
+                      />
+
+
+
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:text="Drop off"
+                      android:padding="10dp"
+                      android:textColor="@color/textGrey"
+                      android:layout_height="wrap_content">
+
+                  </TextView>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:padding="10dp"
+                      android:background="@drawable/bg_rounded_upload_grey"
+                      android:textColor="@color/textGrey"
+                      android:layout_height="40dp"
+                      android:id="@+id/tvDropAddress"
+                      />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:layout_height="match_parent">
+
+                      <Button
+                          android:id="@+id/tvBookingReject"
+                          android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:backgroundTint="@color/black"
+                          android:text="CANCEL"
+                          android:textColor="@color/white"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginRight="20dp"
+                          android:layout_height="wrap_content">
+
+                      </Button>
+
+                      <Button
+                          android:id="@+id/tvBookingAccept"
+                          android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:backgroundTint="@color/redbtn"
+                          android:layout_marginRight="10dp"
+                          android:text="ACCEPT"
+                          android:textColor="@color/white"
+                          android:layout_marginLeft="20dp"
+                          android:layout_height="wrap_content">
+
+                      </Button>
+
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+
+
+      </androidx.cardview.widget.CardView>
+
+  </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/moon_offline"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:visibility="visible"
+
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+
+
+                android:src="@drawable/black_moon" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:textColor="@color/white"
+                    android:text="You are offline !"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Go online to accepting rides. "
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlStartRide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <include layout="@layout/start_ride_popup" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlOtpVerifyPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/trans"
+        android:visibility="gone">
+        <include layout="@layout/otp_verify_popup" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <include layout="@layout/loader_layout" />
+
+    </RelativeLayout>
+</RelativeLayout>

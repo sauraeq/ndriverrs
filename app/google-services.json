@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7294190139",
+    "project_id": "whirlrideshare-c562c",
+    "storage_bucket": "whirlrideshare-c562c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7294190139:android:d5ffc50b0a5de46905921e",
+        "android_client_info": {
+          "package_name": "com.app.whirl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7294190139-j7062dbq9cemgc6ibu5p67op72cs7nft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt458Jzb4Fo7W3Grw1HX6kB3KtBLvU33g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7294190139-j7062dbq9cemgc6ibu5p67op72cs7nft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

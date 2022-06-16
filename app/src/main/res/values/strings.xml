@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">whirl</string>
+    <string name="by_continuing_you_may_receive_an_sms_for_verification_message_and_data_rate_may_apply">By Continuing you may receive an SMS for verification.Message and data rate may apply.</string>
+    <string name="txt_what_s_your_name">What\'s your name?</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_what_s_your_email">What\'s your email?</string>
+    <string name="txt_this_is_where_we_ll_send_your_ride_receipts">This is where we\'ll send your ride receipts.</string>
+    <string name="txt_next">NEXT</string>
+    <string name="submit">Submit</string>
+    <string name="txt_drivers_will_confirm_it_s_you_when_they_pull_up">Drivers will confirm it\'s you when they pull up</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_register_with_mobile_number">Register with mobile number</string>
+    <string name="txt_verify_number">VERIFY NUMBER</string>
+    <string name="txt_or_connect_using_social_media">Or connect using social media</string>
+    <string name="txt_register_with_google">Register with Google</string>
+    <string name="txt_we_will_redirect_you_to_our_third_party_partner_pages_for_social_media_login">We will redirect you to our third party partner pages for social media login</string>
+    <string name="txt_already_have_an_account">Already have an account?</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_take_photo">TAKE PHOTO</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="txt_profile_photo">Profile Photo</string>
+    <string name="txt_recommended_next_step">Recommended next step</string>
+    <string name="txt_driving_licence_front">Driving Licence-Front</string>
+    <string name="txt_ready_to_begin">Ready to begin</string>
+    <string name="txt_pan_card">Pan Card</string>
+    <string name="txt_registration_certificate_rc">Registration Certificate(RC)</string>
+    <string name="txt_vehicle_permit">Vehicle Permit</string>
+    <string name="txt_continue">CONTINUE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="No_Internet">No Internet</string>
+    <string name="servererror">Server Error</string>
+    <string name="plzfname">Please enter first name</string>
+    <string name="plzlname">Please enter last name</string>
+    <string name="plzemail">Please enter email Id</string>
+    <string name="plzvalidemail">Please enter valid email Id</string>
+    <string name="norecardfound">No Record Found</string>
+</resources>

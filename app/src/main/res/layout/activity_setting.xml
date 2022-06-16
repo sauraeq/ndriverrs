@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.profile.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/light_gray"
+
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:id="@+id/profile"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:src="@drawable/profile">
+
+
+                            </ImageView>
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:src="@drawable/edit"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="70dp"
+                                android:layout_height="25dp">
+
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/textdarkGrey"
+                                android:gravity="bottom"
+                                android:text="Connor Chavez"
+                                android:layout_height="0dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/textdarkGrey"
+                                android:gravity="center_vertical"
+                                android:text="+91 9876543212"
+                                android:layout_height="0dp">
+
+                            </TextView>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/textdarkGrey"
+                                android:text="ConnorChavez@gmail.com"
+                                android:layout_height="0dp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Favorites"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:textColor="@color/textdarkGrey"
+                            android:layout_height="wrap_content">
+
+
+                        </TextView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/back_fill_transparent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/relative1"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/back_circle"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_baseline_home_24">
+
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@+id/relative1"
+                                android:padding="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_centerInParent="true"
+                                android:text="Add home"
+                                android:textStyle="bold"
+                                android:textColor="@color/black">
+
+
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_baseline_navigate_next_24"
+                                android:text="Verified"
+                                android:textColor="@color/teal_700">
+
+
+                            </ImageView>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/gray"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="1dp">
+
+                        </View>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/back_fill_transparent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/relative2"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/back_circle"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_baseline_shopping_bag_24">
+
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_toRightOf="@+id/relative2"
+                                android:padding="5dp"
+                                android:text="Add work"
+                                android:textColor="@color/black"
+                                android:textStyle="bold">
+
+
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_baseline_navigate_next_24"
+                                android:text="Verified"
+                                android:textColor="@color/teal_700">
+
+
+                            </ImageView>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/gray"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="1dp">
+
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="More saved places"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10sp"
+                            android:textColor="@color/light_blue"
+                            android:layout_height="wrap_content">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/back_fill"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Safety"
+                            android:textStyle="bold"
+                            android:textColor="@color/black">
+
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/eye"
+                            android:paddingLeft="2dp"
+                            android:text="Control your safety setting, including Ridecheck notifications "
+                            android:textColor="@color/textdarkGrey">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/back_fill"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Privacy"
+                            android:textStyle="bold"
+                            android:textColor="@color/black">
+
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/eye"
+                            android:paddingLeft="2dp"
+                            android:text="Manage the data you share with us"
+                            android:textColor="@color/textdarkGrey">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/back_fill"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="Security"
+                            android:textStyle="bold"
+                            android:textColor="@color/black">
+
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/eye"
+                            android:paddingLeft="2dp"
+                            android:text="Control your account security with 2-step verification and more"
+                            android:textColor="@color/textdarkGrey">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
